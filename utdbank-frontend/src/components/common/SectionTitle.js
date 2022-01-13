@@ -1,5 +1,4 @@
 import React from "react";
-
 const SectionTitle = ({ description }) => {
   return (
     <div className="section-title">
@@ -11,5 +10,4 @@ const SectionTitle = ({ description }) => {
     </div>
   );
 };
-
 export default SectionTitle;

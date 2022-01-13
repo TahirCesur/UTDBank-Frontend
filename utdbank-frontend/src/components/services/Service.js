@@ -1,13 +1,11 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
 import ServiceItem from "./ServiceItem";
-
 const Service = () => {
   return (
     <section className="home-service-section p-tb-100">
       <div className="container">
         <SectionTitle description="Services we are providing" />
-
         <div className="home-service-content service-page-grid">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-4">
@@ -62,5 +60,4 @@ const Service = () => {
     </section>
   );
 };
-
 export default Service;

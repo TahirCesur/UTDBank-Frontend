@@ -5,7 +5,7 @@ const PageHeader = ({ title }) => {
     <div>
       <header
         className="page-title page-bg"
-        style={{ backgroundImage: "url(assets/images/terms.png)" }}
+        style={{ backgroundImage: 'url(assets/images/terms.png)' }}
       >
         <div className="container">
           <div className="page-title-inner">
@@ -24,5 +24,4 @@ const PageHeader = ({ title }) => {
     </div>
   );
 };
-
 export default PageHeader;

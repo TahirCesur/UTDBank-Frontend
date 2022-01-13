@@ -1,12 +1,12 @@
-import React from "react";
-import TopBar from "../components/common/TopBar";
+import React from 'react'
+import TopBar from '../components/common/TopBar'
 
 const HomePage = () => {
-  return (
-    <div>
-      <TopBar />
-    </div>
-  );
-};
+    return (
+        <div>
+          
+        </div>
+    )
+}
 
-export default HomePage;
+export default HomePage
