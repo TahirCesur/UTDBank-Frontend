@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer className="footer-bg">
       <div className="container">
@@ -10,7 +16,7 @@ const Footer = () => {
             <div className="col-sm-12 col-md-12 col-lg-4">
               <div className="footer-content-item">
                 <div className="footer-logo">
-                  <Link to="index.html">
+                  <Link to="/" onClick={scrollToTop}>
                     <img src="assets/images/logo-white.png" alt="logo" />
                   </Link>
                 </div>
@@ -33,14 +39,14 @@ const Footer = () => {
                     <Link to="/faqs">FAQ's</Link>
                   </li>
                   <li>
-                    <Link to="privacy-policy.html">Privacy Policy</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="terms-conditions.html">Terms & Conditions</Link>
+                    <Link to="/terms-conditions">Terms & Conditions</Link>
                   </li>
 
                   <li>
-                    <Link to="contact-us.html">Contact Us</Link>
+                    <Link to="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -52,16 +58,16 @@ const Footer = () => {
                 </div>
                 <ul className="footer-details footer-list">
                   <li>
-                    <Link to="about-us.html">About Us</Link>
+                    <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
                     <Link to="/services">Services</Link>
                   </li>
                   <li>
-                    <Link to="features.html">Features</Link>
+                    <Link to="#">Features</Link>
                   </li>
                   <li>
-                    <Link to="pricing.html">Our Pricing</Link>
+                    <Link to="/pricing">Our Pricing</Link>
                   </li>
                 </ul>
               </div>
@@ -79,20 +85,20 @@ const Footer = () => {
                   <li>
                     Message:
                     <span>
-                      <Link to="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
+                      <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
                         <span
                           className="__cf_email__"
                           data-cfemail="224b4c444d62434e4b430c414d4f"
                         >
                           [email&#160;protected]
                         </span>
-                      </Link>
+                      </a>
                     </span>
                   </li>
                   <li>
                     Phone:
                     <span>
-                      <Link to="tel:(+00)67834598">(+00) 678 345 98</Link>
+                      <a href="tel:(+00)67834598">(+00) 678 345 98</a>
                     </span>
                   </li>
                   <li>
@@ -107,44 +113,44 @@ const Footer = () => {
           <div className="footer-lower-item footer-copyright-text">
             <p>
               Copyright ©2021 Design & Developed by
-              <Link to="https://techproeducation.com" target="_blank">
-                Techpro Education
-              </Link>
+              <a href="https://techproeducation.com" target="_blank">
+                <br></br>Techpro Education
+              </a>
             </p>
           </div>
           <div className="footer-lower-item footer-social-logo">
             <ul className="footer-social-list">
               <li className="social-btn social-btn-fb">
-                <Link to="#">
+                <a href="#">
                   <i className="bx bxl-facebook"></i>
-                </Link>
+                </a>
               </li>
               <li className="social-btn social-btn-tw">
-                <Link to="#">
+                <a href="#">
                   <i className="bx bxl-twitter"></i>
-                </Link>
+                </a>
               </li>
               <li className="social-btn social-btn-ins">
-                <Link to="#">
+                <a href="#">
                   <i className="bx bxl-instagram"></i>
-                </Link>
+                </a>
               </li>
               <li className="social-btn social-btn-pin">
-                <Link to="#">
+                <a href="#">
                   <i className="bx bxl-pinterest-alt"></i>
-                </Link>
+                </a>
               </li>
               <li className="social-btn social-btn-yt">
-                <Link to="#">
+                <a href="#">
                   <i className="bx bxl-youtube"></i>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

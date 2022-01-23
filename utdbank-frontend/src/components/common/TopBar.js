@@ -1,27 +1,27 @@
-import React from 'react'
-import Menu from './Menu'
+import React from "react";
+import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 const TopBar = () => {
-    return (
-        <div className="fixed-top">
+  return (
+    <div className="fixed-top">
       <div className="navbar-area">
         <div className="mobile-nav">
-          <a href="index.html" className="logo">
+          <Link to="/" className="logo">
             <img src="assets/images/logo.png" alt="logo" />
-          </a>
+          </Link>
           <div className="navbar-option">
             <div className="navbar-option-item">
-              <a href="authentication.html">
+              <Link to="/auth">
                 <i className="flaticon-login"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-
-        <Menu/>
+        <Menu />
       </div>
     </div>
-    )
-}
+  );
+};
 
-export default TopBar
+export default TopBar;

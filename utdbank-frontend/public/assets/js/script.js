@@ -9,8 +9,6 @@ jQuery(function ($) {
     }
   });
 
-
-
   $(document).ready(function () {
     $(".video-modal").magnificPopup({
       disableOn: 0,
@@ -22,33 +20,25 @@ jQuery(function ($) {
     });
     $(".modal-action").click(function () {
       var modal_action = $(this).attr("data-modal-action");
-      $(".modal-wrapper[data-modal-wrapper=" + modal_action + "]").addClass(
-        "modal-wrapper-active"
-      );
+      $(".modal-wrapper[data-modal-wrapper=" + modal_action + "]").addClass("modal-wrapper-active");
     });
     $(".modal-close").click(function () {
       var modal_close = $(this).attr("data-modal-close");
-      $(".modal-wrapper[data-modal-wrapper=" + modal_close + "]").removeClass(
-        "modal-wrapper-active"
-      );
+      $(".modal-wrapper[data-modal-wrapper=" + modal_close + "]").removeClass("modal-wrapper-active");
     });
-    
-    
+
     $(".home-feature-carousel").owlCarousel({
       loop: false,
       margin: 35,
       nav: true,
-      navText: [
-        "<span class='flaticon-left-arrow'></span>",
-        "<span class='flaticon-right-arrow'></span>",
-      ],
+      navText: ["<span class='flaticon-left-arrow'></span>", "<span class='flaticon-right-arrow'></span>"],
       dots: false,
       smartSpeed: 2500,
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 1000: { items: 3 } },
     });
 
     $(".counter").counterUp({ delay: 10, time: 1000 });
-    
+
     $(".client-carousel").owlCarousel({
       loop: false,
       margin: 0,
@@ -78,10 +68,7 @@ jQuery(function ($) {
         loop: true,
         animateIn: "fadeIn",
         animateOut: "fadeOut",
-        navText: [
-          "<span class='flaticon-left-arrow'></span>",
-          "<span class='flaticon-right-arrow'></span>",
-        ],
+        navText: ["<span class='flaticon-left-arrow'></span>", "<span class='flaticon-right-arrow'></span>"],
       })
       .on("changed.owl.carousel", syncPosition);
     carousel2
@@ -111,11 +98,7 @@ jQuery(function ($) {
       if (current > count) {
         current = 0;
       }
-      carousel2
-        .find(".owl-item")
-        .removeClass("current")
-        .eq(current)
-        .addClass("current");
+      carousel2.find(".owl-item").removeClass("current").eq(current).addClass("current");
       var onscreen = carousel2.find(".owl-item.active").length - 1;
       var start = carousel2.find(".owl-item.active").first().index();
       var end = carousel2.find(".owl-item.active").last().index();
@@ -154,10 +137,7 @@ jQuery(function ($) {
       nav: false,
       dots: false,
       smartSpeed: 1500,
-      navText: [
-        "<span class='flaticon-left-arrow'></span>",
-        "<span class='flaticon-right-arrow'></span>",
-      ],
+      navText: ["<span class='flaticon-left-arrow'></span>", "<span class='flaticon-right-arrow'></span>"],
       responsive: { 0: { items: 1 }, 768: { items: 1 }, 1000: { items: 1 } },
     });
     $(".faq-accordion-header").click(function () {
@@ -169,15 +149,8 @@ jQuery(function ($) {
     });
     $(".authentication-tab-item").click(function () {
       var tab_modal = $(this).attr("data-authentcation-tab");
-      $(this)
-        .addClass("authentication-tab-active")
-        .siblings()
-        .removeClass("authentication-tab-active");
-      $(
-        ".authentication-tab-details-item[data-authentcation-details=" +
-          tab_modal +
-          "]"
-      )
+      $(this).addClass("authentication-tab-active").siblings().removeClass("authentication-tab-active");
+      $(".authentication-tab-details-item[data-authentcation-details=" + tab_modal + "]")
         .addClass("authentication-tab-details-active")
         .siblings()
         .removeClass("authentication-tab-details-active");

@@ -5,7 +5,11 @@ const Service = () => {
   return (
     <section className="home-service-section p-tb-100">
       <div className="container">
-        <SectionTitle description="Services we are providing" />
+        <div className="section-title">
+          <h2>Services we are providing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing sed do</p>
+        </div>
+
         <div className="home-service-content service-page-grid">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-4">

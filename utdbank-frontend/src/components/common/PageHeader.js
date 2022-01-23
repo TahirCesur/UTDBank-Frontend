@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PageHeader = ({ title }) => {
   return (
     <div>
       <header
         className="page-title page-bg"
-        style={{ backgroundImage: 'url(assets/images/terms.png)' }}
+        style={{ backgroundImage: "url(assets/images/terms.png)" }}
       >
         <div className="container">
           <div className="page-title-inner">
@@ -13,7 +14,7 @@ const PageHeader = ({ title }) => {
               <h1>{title}</h1>
               <ul className="page-breadcrumbs">
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>{title}</li>
               </ul>

@@ -1,13 +1,14 @@
 import React from "react";
-const SectionTitle = ({ description }) => {
+
+const SectionTitle = (props) => {
+  const { title, content } = props;
+
   return (
     <div className="section-title">
-      <h2>{description}</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
-        agnamqua ptatem consectetur.
-      </p>
+      <h2>{title}</h2>
+      <p>{content}</p>
     </div>
   );
 };
+
 export default SectionTitle;

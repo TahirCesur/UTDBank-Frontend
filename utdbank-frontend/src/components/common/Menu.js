@@ -1,51 +1,61 @@
-import React from 'react'
-import UserMenu from './UserMenu'
+import React from "react";
 import { Link } from "react-router-dom";
+import UserMenu from "./UserMenu";
 
 const Menu = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="main-nav">
       <div className="container-fluid">
         <nav className="navbar navbar-expand-md navbar-light">
-          <a className="navbar-brand" href="index.html">
+          <Link className="navbar-brand" to="/" onClick={scrollToTop}>
             <img src="assets/images/logo.png" alt="logo" />
-          </a>
-          <div
-            className="collapse navbar-collapse mean-menu"
-            id="navbarSupportedContent"
-          >
+          </Link>
+          <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link to="/" className="nav-link active">
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </li>
+
               <li className="nav-item">
-                <Link to="about" className="nav-link">
+                <Link to="/about-us" className="nav-link">
                   About Us
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="/services" className="nav-link">
                   Services
                 </Link>
               </li>
+
               <li className="nav-item">
-                <Link to="pricing.html" className="nav-link">
+                <Link to="/pricing" className="nav-link">
                   Pricing
                 </Link>
               </li>
+
               <li className="nav-item">
-                <Link to="contact-us.html" className="nav-link">
+                <Link to="/contact-us" className="nav-link">
                   Contact Us
                 </Link>
               </li>
             </ul>
           </div>
+
           <UserMenu />
         </nav>
       </div>
     </div>
-  )
-}
-export default Menu
+  );
+};
+
+export default Menu;
