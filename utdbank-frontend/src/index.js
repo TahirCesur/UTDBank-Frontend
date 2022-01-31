@@ -6,6 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { ContextProvider } from "./context";
 import "react-toastify/dist/ReactToastify.css";
 
+import "alertifyjs/build/css/alertify.min.css";
+import "./assets/css/style.css";
+
 
 ReactDOM.render(
   <React.StrictMode>

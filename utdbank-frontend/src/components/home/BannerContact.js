@@ -26,12 +26,9 @@ const BannerContact = () => {
                       <i className="bx bxs-star"></i>
                     </li>
                   </ul>
-                  <p>
-                    Migration dolor sit amet etur divelit conseetur diisci velit
-                    sed tempora incidunt
-                  </p>
+                  <p>Migration dolor sit amet etur divelit conseetur diisci velit sed tempora incidunt</p>
                   <div className="support-logo">
-                    <img src="assets/images/logo.png" alt="logo" />
+                    <img src="/assets/images/logo.png" alt="logo" />
                   </div>
                 </div>
               </div>
@@ -40,7 +37,7 @@ const BannerContact = () => {
               {/*  <!-- BANNER CONTACT ITEM START --> */}
               <div className="support-group-item">
                 <div className="support-thumb">
-                  <img src="assets/images/envelop.png" alt="support" />
+                  <img src="/assets/images/envelop.png" alt="support" />
                 </div>
                 <div className="support-details">
                   <h3>
@@ -55,7 +52,7 @@ const BannerContact = () => {
               {/* <!-- BANNER CONTACT ITEM START --> */}
               <div className="support-group-item">
                 <div className="support-thumb">
-                  <img src="assets/images/phone.png" alt="support" />
+                  <img src="/assets/images/phone.png" alt="support" />
                 </div>
                 <div className="support-details">
                   <h3>
@@ -70,7 +67,7 @@ const BannerContact = () => {
               {/*  <!-- BANNER CONTACT ITEM START --> */}
               <div className="support-group-item">
                 <div className="support-thumb">
-                  <img src="assets/images/map.png" alt="support" />
+                  <img src="/assets/images/map.png" alt="support" />
                 </div>
                 <div className="support-details">
                   <h3>456 Labisto Parkways</h3>

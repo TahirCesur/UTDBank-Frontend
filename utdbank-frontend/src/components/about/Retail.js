@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Retail = () => {
   return (
@@ -8,7 +8,7 @@ const Retail = () => {
           <div className="home-about-content">
             <div className="worker-section-shape">
               <div className="worker-shape-item">
-                <img src="assets/images/worker-vector.png" alt="icon" />
+                <img src="/assets/images/worker-vector.png" alt="icon" />
               </div>
             </div>
             <div className="row align-items-center">
@@ -16,9 +16,8 @@ const Retail = () => {
                 <div className="home-service-start">
                   <h2>Dedicated Team Support Helping You</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                    do eiusul dolor sit amet, consecteturadipisci sed quia non
-                    numquam eius modi tempora m dolor sit amet consectetu
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusul dolor sit amet,
+                    consecteturadipisci sed quia non numquam eius modi tempora m dolor sit amet consectetu
                   </p>
                 </div>
               </div>
@@ -27,7 +26,7 @@ const Retail = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 worker-grid-item fluid-height">
                     <div className="worker-grid-content overflow-hidden border-radius-5">
                       <div className="worker-content-img">
-                        <img src="assets/images/worker-3.png" alt="worker" />
+                        <img src="/assets/images/worker-3.png" alt="worker" />
                       </div>
                       <div className="worker-content-layout">
                         <h3 className="client-caption-title">John doe</h3>
@@ -60,13 +59,11 @@ const Retail = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 worker-grid-item fluid-height">
                     <div className="worker-grid-content overflow-hidden border-radius-5">
                       <div className="worker-content-img">
-                        <img src="assets/images/worker-4.png" alt="worker" />
+                        <img src="/assets/images/worker-4.png" alt="worker" />
                       </div>
                       <div className="worker-content-layout">
                         <h3 className="client-caption-title">Alex maxwell</h3>
-                        <h4 className="client-caption-designation">
-                          CEO & Founder
-                        </h4>
+                        <h4 className="client-caption-designation">CEO & Founder</h4>
                         <ul className="worker-social-link">
                           <li>
                             <a href="#">
@@ -95,13 +92,11 @@ const Retail = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 worker-grid-item fluid-height">
                     <div className="worker-grid-content overflow-hidden border-radius-5">
                       <div className="worker-content-img">
-                        <img src="assets/images/worker-1.png" alt="worker" />
+                        <img src="/assets/images/worker-1.png" alt="worker" />
                       </div>
                       <div className="worker-content-layout">
                         <h3 className="client-caption-title">Robert johnson</h3>
-                        <h4 className="client-caption-designation">
-                          Software Engineer
-                        </h4>
+                        <h4 className="client-caption-designation">Software Engineer</h4>
                         <ul className="worker-social-link">
                           <li>
                             <a href="#">
@@ -130,13 +125,11 @@ const Retail = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 worker-grid-item fluid-height">
                     <div className="worker-grid-content overflow-hidden border-radius-5">
                       <div className="worker-content-img">
-                        <img src="assets/images/worker-2.png" alt="worker" />
+                        <img src="/assets/images/worker-2.png" alt="worker" />
                       </div>
                       <div className="worker-content-layout">
                         <h3 className="client-caption-title">Devit m. kolin</h3>
-                        <h4 className="client-caption-designation">
-                          Analysis Engineer
-                        </h4>
+                        <h4 className="client-caption-designation">Analysis Engineer</h4>
                         <ul className="worker-social-link">
                           <li>
                             <a href="#">
@@ -169,7 +162,7 @@ const Retail = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Retail
+export default Retail;

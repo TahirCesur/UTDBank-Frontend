@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="footer-content-item">
                 <div className="footer-logo">
                   <Link to="/" onClick={scrollToTop}>
-                    <img src="assets/images/logo-white.png" alt="logo" />
+                    <img src="/assets/images/logo-white.png" alt="logo" />
                   </Link>
                 </div>
                 <div className="footer-details">
@@ -36,17 +36,25 @@ const Footer = () => {
                 </div>
                 <ul className="footer-details footer-list">
                   <li>
-                    <Link to="/faqs">FAQ's</Link>
+                    <Link to="/faqs" onClick={scrollToTop}>
+                      FAQ's
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/privacy-policy" onClick={scrollToTop}>
+                      Privacy Policy
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/terms-conditions">Terms & Conditions</Link>
+                    <Link to="/terms-conditions" onClick={scrollToTop}>
+                      Terms & Conditions
+                    </Link>
                   </li>
 
                   <li>
-                    <Link to="/contact-us">Contact Us</Link>
+                    <Link to="/contact-us" onClick={scrollToTop}>
+                      Contact Us
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -58,16 +66,24 @@ const Footer = () => {
                 </div>
                 <ul className="footer-details footer-list">
                   <li>
-                    <Link to="/about-us">About Us</Link>
+                    <Link to="/about-us" onClick={scrollToTop}>
+                      About Us
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="/services" onClick={scrollToTop}>
+                      Services
+                    </Link>
                   </li>
                   <li>
-                    <Link to="#">Features</Link>
+                    <Link to="#" onClick={scrollToTop}>
+                      Features
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/pricing">Our Pricing</Link>
+                    <Link to="/pricing" onClick={scrollToTop}>
+                      Our Pricing
+                    </Link>
                   </li>
                 </ul>
               </div>

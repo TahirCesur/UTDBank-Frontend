@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginForm from "../components/auth/LoginForm";
 import RegisterForm from "../components/auth/RegisterForm";
-import { Container, Tab, Tabs } from "react-bootstrap";
+import { Tab, Tabs } from "react-bootstrap";
 import Spacer from "../components/common/Spacer";
 import { ToastContainer } from "react-toastify";
 
 const AuthPage = () => {
   return (
-    <div style={{ overflow: "visible", margin: "0" }}>
-      <Spacer />
+   
+     <div style={{ overflow: "visible", margin: "0" }}>
+     
+
       <div className="authentication-section">
         <div className="authentication-grid">
           <div className="authentication-item authentication-img-bg"></div>
@@ -17,10 +19,11 @@ const AuthPage = () => {
             <div className="authentication-user-panel p-0 m-0">
               <div className="authentication-user-header p-0 m-0">
                 <Link to="/">
-                  <img src="assets/images/logo.png" alt="logo" />
+                  <img src="/assets/images/logo.png" alt="logo" />
                 </Link>
                 <h1>Welcome to UTD Bank</h1>
                 <Spacer size={50} />
+
                 <Tabs defaultActiveKey="login" id="uncontrolled-tab-example" className="mb-0">
                   <Tab eventKey="login" title="Login">
                     <LoginForm />
@@ -34,8 +37,12 @@ const AuthPage = () => {
           </div>
         </div>
       </div>
+
+      
+
       <ToastContainer />
     </div>
+  
   );
 };
 

@@ -18,7 +18,7 @@ const Banner = () => {
                 <button className="btn1 orange-gradient btn-with-image">
                   <i className="flaticon-login"></i>
                   <i className="flaticon-login"></i>
-                  <Link to="/auth" style={{ color: "white" }}>
+                  <Link to="/login" style={{ color: "white" }}>
                     Get started
                   </Link>
                 </button>

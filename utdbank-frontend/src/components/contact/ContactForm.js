@@ -10,10 +10,7 @@ const ContactForm = ({ subtitle, buttonmessage }) => {
               <div className="col-sm-12 col-md-12 col-lg-5">
                 <div className="home-facility-image">
                   <div className="home-facility-item faq-block-image pb-30">
-                    <img
-                      src="assets/images/contact-comment.png"
-                      alt="comment"
-                    />
+                    <img src="/assets/images/contact-comment.png" alt="comment" />
                   </div>
                 </div>
               </div>
@@ -130,10 +127,7 @@ const ContactForm = ({ subtitle, buttonmessage }) => {
                             </div>
                           </div>
                           <div className="col-sm-12 col-md-12 col-lg-12">
-                            <button
-                              className="btn1 orange-gradient btn-with-image"
-                              type="submit"
-                            >
+                            <button className="btn1 orange-gradient btn-with-image" type="submit">
                               <i className="flaticon-login"></i>
                               <i className="flaticon-login"></i>
                               {buttonmessage}

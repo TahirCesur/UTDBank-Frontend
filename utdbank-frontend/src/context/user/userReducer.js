@@ -21,4 +21,11 @@ export const userReducer = (state = userInitialState, action) => {
       isUserLogin: false,
     };
   }
+  else if(action.type === types.USER_UPDATED){
+    return {
+        ...state,
+        user:action.payload,
+        isUserLogin:true
+    }
+  }
 };

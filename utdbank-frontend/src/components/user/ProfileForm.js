@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 import { useFormik } from "formik";
+
 import { Form, Button, Spinner, Alert } from "react-bootstrap";
+
 import MaskInput from "react-maskinput/lib";
 import { updateUser } from "../../api/user-service";
 
@@ -13,20 +15,24 @@ const ProfileForm = ({ user }) => {
 
   /*
     Object.keys(user).length > 0
+
       (?) user
       : {
           ssn: "",
           firstName: "",
           lastName: "",
-          phoneNumber: "",
+          mobilePhoneNumber: "",
           email: "",
           address: "",
+
         };
 */
   const validationSchema = Yup.object({
     firstName: Yup.string().required("Please enter your first name"),
     lastName: Yup.string().required("Please enter your last name"),
-    phoneNumber: Yup.string().required("Please enter your phone number"),
+
+    mobilePhoneNumber: Yup.string().required("Please enter your phone number"),
+
     email: Yup.string().email().required("Please enter your email"),
     address: Yup.string().required("Please enter your address"),
     zipCode: Yup.string().required("Please enter your zip code"),
@@ -38,6 +44,7 @@ const ProfileForm = ({ user }) => {
     delete values["roles"];
 
     setLoading(true);
+
     updateUser(values)
       .then((resp) => {
         toast("Your profile updated successfully");
@@ -48,6 +55,7 @@ const ProfileForm = ({ user }) => {
         console.log(err.response.data.message);
         setLoading(false);
       });
+
   };
 
   const formik = useFormik({
@@ -60,6 +68,7 @@ const ProfileForm = ({ user }) => {
   return (
     <Form noValidate onSubmit={formik.handleSubmit}>
       <Form.Group className="mb-3">
+
         <Form.Label>Ssn No</Form.Label>
         <Form.Control
           type="text"
@@ -69,13 +78,13 @@ const ProfileForm = ({ user }) => {
           maskChar="_"
           mask="000-00-0000"
           placeholder="SSN"
+          disabled
         />
-        <Form.Control.Feedback type="invalid">
-          {formik.errors.ssn}
-        </Form.Control.Feedback>
+        <Form.Control.Feedback type="invalid">{formik.errors.ssn}</Form.Control.Feedback>
       </Form.Group>
 
       <Form.Group className="mb-3">
+
         <Form.Label>First Name</Form.Label>
         <Form.Control
           type="text"
@@ -83,9 +92,9 @@ const ProfileForm = ({ user }) => {
           {...formik.getFieldProps("firstName")}
           isInvalid={!!formik.errors.firstName}
         />
-        <Form.Control.Feedback type="invalid">
-          {formik.errors.firstName}
-        </Form.Control.Feedback>
+
+        <Form.Control.Feedback type="invalid">{formik.errors.firstName}</Form.Control.Feedback>
+
       </Form.Group>
 
       <Form.Group className="mb-3">
@@ -96,9 +105,9 @@ const ProfileForm = ({ user }) => {
           {...formik.getFieldProps("lastName")}
           isInvalid={!!formik.errors.lastName}
         />
-        <Form.Control.Feedback type="invalid">
-          {formik.errors.lastName}
-        </Form.Control.Feedback>
+
+        <Form.Control.Feedback type="invalid">{formik.errors.lastName}</Form.Control.Feedback>
+
       </Form.Group>
 
       <Form.Group className="mb-3">
@@ -107,24 +116,22 @@ const ProfileForm = ({ user }) => {
           type="text"
           placeholder="Enter phone number"
           as={MaskInput}
+
           alwaysShowMask
           maskChar="_"
           mask="(000) 000-0000"
           {...formik.getFieldProps("mobilePhoneNumber")}
           isInvalid={!!formik.errors.mobilePhoneNumber}
         />
-        <Form.Control.Feedback type="invalid">
-          {formik.errors.mobilePhoneNumber}
-        </Form.Control.Feedback>
+        <Form.Control.Feedback type="invalid">{formik.errors.mobilePhoneNumber}</Form.Control.Feedback>
+
       </Form.Group>
 
       <Form.Group className="mb-3">
         <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter email"
-          value={formik.values.email}
-        />
+
+        <Form.Control type="email" placeholder="Enter email" value={formik.values.email} />
+
       </Form.Group>
 
       <Form.Group className="mb-3">
@@ -135,14 +142,12 @@ const ProfileForm = ({ user }) => {
           {...formik.getFieldProps("address")}
           isInvalid={!!formik.errors.address}
         />
-        <Form.Control.Feedback type="invalid">
-          {formik.errors.address}
-        </Form.Control.Feedback>
+
+        <Form.Control.Feedback type="invalid">{formik.errors.address}</Form.Control.Feedback>
       </Form.Group>
 
       <Button type="submit" disabled={user.builtIn || loading}>
-        {loading && <Spinner animation="border" variant="light" size="sm" />}{" "}
-        Save
+        {loading && <Spinner animation="border" variant="light" size="sm" />} Save
       </Button>
 
       {user.builtIn && (
@@ -150,6 +155,7 @@ const ProfileForm = ({ user }) => {
           Built-in accounts can not be updated or deleted.
         </Alert>
       )}
+
     </Form>
   );
 };

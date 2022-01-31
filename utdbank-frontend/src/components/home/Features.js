@@ -7,7 +7,7 @@ const Features = () => {
     {
       id: 1,
       title: "Fully Encrypted",
-      img: "assets/images/file.png",
+      img: "/assets/images/file.png",
       content:
         " Lorem ipsum dolor sit amet, cosectetur adipisicing elit, sed deimod tempor incid-idunt ut dolor sit amet",
     },
@@ -15,7 +15,7 @@ const Features = () => {
     {
       id: 2,
       title: "Transparent Pricing",
-      img: "assets/images/hand.png",
+      img: "/assets/images/hand.png",
       content:
         " Lorem ipsum dolor sit amet, cosectetur adipisicing elit, sed deimod tempor incid-idunt ut dolor sit amet",
     },
@@ -23,7 +23,7 @@ const Features = () => {
     {
       id: 3,
       title: "Safe and Secure",
-      img: "assets/images/megaphone.png",
+      img: "/assets/images/megaphone.png",
       content:
         " Lorem ipsum dolor sit amet, cosectetur adipisicing elit, sed deimod tempor incid-idunt ut dolor sit amet",
     },
@@ -51,11 +51,7 @@ const Features = () => {
           <div className="home-feature-carousel owl-carousel owl-theme">
             {data.map((card) => (
               <div key={card.id}>
-                <FeaturesCard
-                  title={card.title}
-                  img={card.img}
-                  content={card.content}
-                />
+                <FeaturesCard title={card.title} img={card.img} content={card.content} />
               </div>
             ))}
           </div>

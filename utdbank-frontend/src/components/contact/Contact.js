@@ -9,13 +9,11 @@ const Contact = () => {
             <div className="box-card fluid-height">
               <div className="box-card-inner full-height">
                 <div className="box-card-icon mb-25">
-                  <img src="assets/images/address.png" alt="icon" />
+                  <img src="/assets/images/address.png" alt="icon" />
                 </div>
                 <div className="box-card-details">
                   <h3 className="box-card-title mb-20">Address</h3>
-                  <p className="box-card-para">
-                    456 Labisto Parkways, CA, United States
-                  </p>
+                  <p className="box-card-para">456 Labisto Parkways, CA, United States</p>
                 </div>
               </div>
             </div>
@@ -24,32 +22,20 @@ const Contact = () => {
             <div className="box-card fluid-height">
               <div className="box-card-inner full-height">
                 <div className="box-card-icon mb-25">
-                  <img src="assets/images/email.png" alt="icon" />
+                  <img src="/assets/images/email.png" alt="icon" />
                 </div>
                 <div className="box-card-details">
                   <h3 className="box-card-title mb-20">Email</h3>
                   <p className="box-card-para">
-                    <a
-                      className="link-us"
-                      href="/cdn-cgi/l/email-protection#7e171018113e1f12171f501d1113"
-                    >
-                      <span
-                        className="__cf_email__"
-                        data-cfemail="4b22252d240b2a27222a65282426"
-                      >
+                    <a className="link-us" href="/cdn-cgi/l/email-protection#7e171018113e1f12171f501d1113">
+                      <span className="__cf_email__" data-cfemail="4b22252d240b2a27222a65282426">
                         [email&#160;protected]
                       </span>
                     </a>
                   </p>
                   <p className="box-card-para">
-                    <a
-                      className="link-us"
-                      href="/cdn-cgi/l/email-protection#82f1f7f2f2edf0f6c2e3eeebe3ace1edef"
-                    >
-                      <span
-                        className="__cf_email__"
-                        data-cfemail="72010702021d000632131e1b135c111d1f"
-                      >
+                    <a className="link-us" href="/cdn-cgi/l/email-protection#82f1f7f2f2edf0f6c2e3eeebe3ace1edef">
+                      <span className="__cf_email__" data-cfemail="72010702021d000632131e1b135c111d1f">
                         [email&#160;protected]
                       </span>
                     </a>
@@ -62,7 +48,7 @@ const Contact = () => {
             <div className="box-card fluid-height">
               <div className="box-card-inner full-height">
                 <div className="box-card-icon mb-25">
-                  <img src="assets/images/contact-phone.png" alt="icon" />
+                  <img src="/assets/images/contact-phone.png" alt="icon" />
                 </div>
                 <div className="box-card-details">
                   <h3 className="box-card-title mb-20">Phone</h3>

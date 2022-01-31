@@ -15,7 +15,7 @@ const Menu = () => {
       <div className="container-fluid">
         <nav className="navbar navbar-expand-md navbar-light">
           <Link className="navbar-brand" to="/" onClick={scrollToTop}>
-            <img src="assets/images/logo.png" alt="logo" />
+            <img src="/assets/images/logo.png" alt="logo" />
           </Link>
           <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">

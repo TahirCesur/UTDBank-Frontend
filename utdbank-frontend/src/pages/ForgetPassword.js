@@ -10,13 +10,13 @@ const ForgetPassword = () => {
           <div className="authentication-user-panel">
             <div className="authentication-user-header">
               <Link to="/">
-                <img src="assets/images/logo.png" alt="logo" />
+                <img src="/assets/images/logo.png" alt="logo" />
               </Link>
             </div>
             <div className="authentication-user-body">
               <p className="mt-40">
-                Lost your password? Please enter your username or email address.
-                You will receive a link to create a new password via email.
+                Lost your password? Please enter your username or email address. You will receive a link to create a new
+                password via email.
               </p>
               <div className="authentication-form">
                 <form>
@@ -37,9 +37,7 @@ const ForgetPassword = () => {
                       </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-12">
-                      <button className="btn1 orange-gradient full-width">
-                        Reset Password
-                      </button>
+                      <button className="btn1 orange-gradient full-width">Reset Password</button>
                     </div>
                   </div>
                 </form>

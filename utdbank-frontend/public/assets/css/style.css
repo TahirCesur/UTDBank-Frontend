@@ -4871,7 +4871,7 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 130vh
 }
 .authentication-grid-lost {
   height: 100vh;
@@ -4889,7 +4889,7 @@ button:active {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -4900,6 +4900,7 @@ button:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow:hidden;
 }
 .authentication-user-header {
   display: -webkit-box;
@@ -4927,6 +4928,7 @@ button:active {
   margin-top: 20px;
 }
 .authentication-user-body {
+  height: 75vh;
   width: 100%;
 }
 .authentication-user-body p {
@@ -4974,9 +4976,11 @@ button:active {
 }
 .authentication-tab-details-item.authentication-tab-details-active {
   display: block;
+  
 }
 .authentication-form {
-  margin-top: 40px;
+  margin-top: 10px;
+  height: 50%;
 }
 .authentication-form .input-area {
   background: #f7f7f7;
@@ -5128,7 +5132,7 @@ button:active {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 160vh;
 }
 .error-page-section {
   height: 100vh;

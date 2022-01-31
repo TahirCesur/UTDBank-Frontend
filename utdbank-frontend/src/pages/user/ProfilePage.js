@@ -29,13 +29,17 @@ const ProfilePage = () => {
           <Col md={1}></Col>
           <Col md={4} className="mt-5 mt-md-0">
             <h3>Profile</h3>
-
+            <Spacer
+              size="50"
+            />
             <ProfileForm user={user} />
           </Col>
           <Col md={1}></Col>
           <Col md={4} className="mt-5 mt-md-0">
             <h3>Update Password</h3>
-
+            <Spacer
+               size="50"
+               />
             <PasswordForm user={user} />
           </Col>
         </Row>

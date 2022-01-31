@@ -6,41 +6,36 @@ const Services = () => {
   const data = [
     {
       key: 1,
-      image: "assets/images/service1.png",
+      image: "/assets/images/service1.png",
       title: "Drag and drop functionality",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
     },
 
     {
       key: 2,
-      image: "assets/images/service2.png",
+      image: "/assets/images/service2.png",
       title: "Email notifications",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
     },
 
     {
       key: 3,
-      image: "assets/images/service3.png",
+      image: "/assets/images/service3.png",
       title: "Deadline reminders",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
     },
     {
       key: 4,
-      image: "assets/images/service4.png",
+      image: "/assets/images/service4.png",
       title: "Simple dashboard",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
     },
 
     {
       key: 5,
-      image: "assets/images/service5.png",
+      image: "/assets/images/service5.png",
       title: "Incredible infrastructure",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod agnamqua ptatem consectetur.",
     },
   ];
 
@@ -61,10 +56,7 @@ const Services = () => {
 
                   {/* <!-- SECTION TITLE END --> */}
 
-                  <Link
-                    to="/services"
-                    className="btn1 blue-gradient btn-with-image"
-                  >
+                  <Link to="/services" className="btn1 blue-gradient btn-with-image">
                     <i className="flaticon-login"></i>
                     <i className="flaticon-login"></i>
                     Get Started
@@ -73,10 +65,7 @@ const Services = () => {
               </div>
             </div>
             {data.map((card) => (
-              <div
-                className="col-sm-12 offset-md-3 col-md-6 offset-lg-0 col-lg-4"
-                key={card.key}
-              >
+              <div className="col-sm-12 offset-md-3 col-md-6 offset-lg-0 col-lg-4" key={card.key}>
                 {/* <!-- SERVICE ITEM START --> */}
                 <div className="home-service-item fluid-height">
                   <div className="home-service-details full-height">

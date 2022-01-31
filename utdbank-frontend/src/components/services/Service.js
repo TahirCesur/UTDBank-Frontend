@@ -16,47 +16,32 @@ const Service = () => {
               <div className="home-service-item fluid-height">
                 <div className="home-service-details full-height">
                   <div className="home-service-image">
-                    <img src="assets/images/service1.png" alt="service" />
+                    <img src="/assets/images/service1.png" alt="service" />
                   </div>
                   <div className="home-service-text">
                     <h3>Drag and drop functionality</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, cosectetur adipisicing elit,
-                      sed deimod empor inddunt ut ualor sit amet
+                      Lorem ipsum dolor sit amet, cosectetur adipisicing elit, sed deimod empor inddunt ut ualor sit
+                      amet
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4">
-              <ServiceItem
-                title="Email notifications"
-                address="assets/images/service2.png"
-              />
+              <ServiceItem title="Email notifications" address="/assets/images/service2.png" />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4">
-              <ServiceItem
-                title="Deadline reminders"
-                address="assets/images/service3.png"
-              />
+              <ServiceItem title="Deadline reminders" address="/assets/images/service3.png" />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4">
-              <ServiceItem
-                title="Simple dashboard"
-                address="assets/images/service4.png"
-              />
+              <ServiceItem title="Simple dashboard" address="/assets/images/service4.png" />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4">
-              <ServiceItem
-                title="Incredible infrastructure"
-                address="assets/images/service5.png"
-              />
+              <ServiceItem title="Incredible infrastructure" address="/assets/images/service5.png" />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4">
-              <ServiceItem
-                title="Drag and drop functionality"
-                address="assets/images/service1.png"
-              />
+              <ServiceItem title="Drag and drop functionality" address="/assets/images/service1.png" />
             </div>
           </div>
         </div>
