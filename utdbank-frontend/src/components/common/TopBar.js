@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
-import { useContext } from "../../context";
+import UserMenu from "./UserMenu";
 
 const TopBar = () => {
   // const { userState } = useContext();
@@ -15,12 +15,10 @@ const TopBar = () => {
             <img src="/assets/images/logo.png" alt="logo" />
           </Link>
           <div className="navbar-option">
-            <div className="navbar-option-item">
-              <Link to="/auth">
-                <i className="flaticon-login"></i>
-              </Link>
+          <div className="navbar-option-item">
+            <UserMenu/>
             </div>
-          </div>
+        </div>
         </div>
         <Menu />
       </div>

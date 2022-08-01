@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 import { useFormik } from "formik";
-import { Form, Button, Spinner, InputGroup } from "react-bootstrap";
+import { Form, Button, Spinner } from "react-bootstrap";
 import { updatePassword } from "../../api/user-service";
-import { useLinkClickHandler } from "react-router-dom";
+
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 
 const PasswordForm = () => {
